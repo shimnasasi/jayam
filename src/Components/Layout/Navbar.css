@@ -1,0 +1,398 @@
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  height: 90px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  width: 175px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+/* =====================================
+   DESKTOP NAVIGATION
+===================================== */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.navbar-links a {
+  position: relative;
+
+  color: #24364b;
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  padding: 34px 0;
+
+  transition: 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: #0866c6;
+}
+
+
+/* Active underline */
+
+.navbar-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 23px;
+
+  width: 0;
+  height: 2px;
+
+  background: #0866c6;
+
+  transform: translateX(-50%);
+
+  transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after,
+.navbar-links a.active::after {
+  width: 100%;
+}
+
+
+/* =====================================
+   QUOTE BUTTON
+===================================== */
+
+.quote-btn {
+  min-width: 145px;
+  height: 48px;
+
+  padding: 0 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #0875d1,
+    #075aa8
+  );
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  border-radius: 5px;
+
+  box-shadow: 0 6px 18px rgba(8, 102, 198, 0.2);
+
+  transition: 0.3s ease;
+}
+
+.quote-btn span {
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.quote-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 9px 24px rgba(8, 102, 198, 0.28);
+}
+
+.quote-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =====================================
+   HAMBURGER
+===================================== */
+
+.menu-toggle {
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  display: none;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 2.5px;
+
+  background: #0866c6;
+
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+}
+
+
+/* Turn 3 bars into X */
+
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(7.5px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7.5px) rotate(-45deg);
+}
+
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+
+.mobile-menu {
+  display: none;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+  .navbar-container {
+    height: 80px;
+    padding: 0 22px;
+  }
+
+  .navbar-logo img {
+    width: 150px;
+  }
+
+  .navbar-links {
+    gap: 22px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .quote-btn {
+    min-width: 125px;
+    height: 44px;
+    padding: 0 15px;
+  }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    position: relative;
+  }
+
+  .navbar-container {
+    height: 72px;
+    padding: 0 18px;
+  }
+
+  /* Logo */
+
+  .navbar-logo img {
+    width: 135px;
+  }
+
+  /* Hide desktop nav */
+
+  .navbar-links {
+    display: none;
+  }
+
+  /* Hide desktop quote */
+
+  .quote-btn {
+    display: none;
+  }
+
+  /* Show hamburger */
+
+  .menu-toggle {
+    display: flex;
+  }
+
+
+  /* Mobile dropdown */
+
+  .mobile-menu {
+    position: absolute;
+
+    top: 72px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 12px 20px 24px;
+
+    background: #ffffff;
+
+    border-top: 1px solid #edf1f5;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(-10px);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .mobile-menu.show {
+    opacity: 1;
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+
+  /* Mobile Links */
+
+  .mobile-menu > a:not(.mobile-quote-btn) {
+    padding: 15px 5px;
+
+    color: #24364b;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #edf1f5;
+
+    transition: 0.3s ease;
+  }
+
+  .mobile-menu > a:not(.mobile-quote-btn):hover,
+  .mobile-menu > a.active:not(.mobile-quote-btn) {
+    color: #0866c6;
+    padding-left: 10px;
+  }
+
+
+  /* Mobile Quote Button */
+
+  .mobile-quote-btn {
+    width: 100%;
+
+    margin-top: 18px;
+    padding: 14px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: linear-gradient(
+      135deg,
+      #0875d1,
+      #075aa8
+    );
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+  }
+
+  .mobile-quote-btn span {
+    font-size: 20px;
+  }
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 400px) {
+
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .navbar-logo img {
+    width: 120px;
+  }
+
+  .mobile-menu {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

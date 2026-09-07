@@ -1,0 +1,461 @@
+/* =========================================
+   HOME BANNER
+========================================= */
+
+.home-banner {
+  width: 100%;
+  height: 650px;
+
+  position: relative;
+  overflow: hidden;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.96) 0%,
+      rgba(255, 255, 255, 0.86) 30%,
+      rgba(255, 255, 255, 0.35) 52%,
+      rgba(255, 255, 255, 0.02) 72%
+    ),
+    url("../Assets/banner5.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.home-banner-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 90px 30px;
+
+  position: relative;
+
+  z-index: 5;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.home-banner-content {
+  max-width: 570px;
+}
+
+
+/* =========================================
+   SMALL LABEL
+========================================= */
+
+.banner-label {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+}
+
+.banner-label span {
+  color: #0876b7;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 5px;
+}
+
+.label-line {
+  width: 45px;
+  height: 1px;
+
+  background: #0876b7;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.home-banner-content h1 {
+  margin: 0;
+
+  color: #073967;
+
+  font-size: 58px;
+  font-weight: 800;
+
+  line-height: 0.98;
+
+  letter-spacing: -1.5px;
+}
+
+
+/* =========================================
+   SUB HEADING
+========================================= */
+
+.home-banner-content h2 {
+  margin: 12px 0 18px;
+
+  color: #173c60;
+
+  font-size: 29px;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.home-banner-content p {
+  margin: 0;
+
+  color: #52687b;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.banner-service-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 25px;
+
+  padding: 14px 25px;
+
+  background: linear-gradient(
+    90deg,
+    #0875bb 0%,
+    #08b991 100%
+  );
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border-radius: 4px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  position: relative;
+
+  z-index: 10;
+
+  transition: 0.3s ease;
+}
+
+.banner-service-btn span {
+  font-size: 18px;
+
+  transition: 0.3s ease;
+}
+
+.banner-service-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 10px 25px
+    rgba(7, 118, 184, 0.25);
+}
+
+.banner-service-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   GREEN / BLUE RIGHT SHAPE
+========================================= */
+
+.banner-green-shape {
+  position: absolute;
+
+  right: -1px;
+  bottom: 0;
+
+  width: 390px;
+  height: 285px;
+
+  background: linear-gradient(
+    135deg,
+    #078ac0 0%,
+    #06b89c 100%
+  );
+
+  /*
+     Creates the triangle / diagonal shape
+     like your reference image
+  */
+
+  clip-path: polygon(
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   TEXT INSIDE SHAPE
+========================================= */
+
+.shape-text {
+  position: absolute;
+
+  right: 40px;
+  bottom: 65px;
+
+  color: #ffffff;
+
+  font-family: cursive;
+
+  font-size: 22px;
+
+  line-height: 1.25;
+
+  font-style: italic;
+
+  transform: rotate(-7deg);
+}
+
+
+/* =========================================
+   WHITE BOTTOM SHAPE
+========================================= */
+
+.banner-white-shape {
+  position: absolute;
+
+  left: -5%;
+  bottom: -1px;
+
+  width: 80%;
+  height: 135px;
+
+  background: #ffffff;
+
+  /*
+     This creates the long white diagonal
+     shape at the bottom of the banner.
+  */
+
+  clip-path: polygon(
+    0 15%,
+    100% 100%,
+    0 100%
+  );
+
+  z-index: 4;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .home-banner {
+    height: 600px;
+
+    background-position: 60% center;
+  }
+
+  .home-banner-container {
+    padding: 75px 30px;
+  }
+
+  .home-banner-content {
+    max-width: 520px;
+  }
+
+  .home-banner-content h1 {
+    font-size: 49px;
+  }
+
+  .home-banner-content h2 {
+    font-size: 25px;
+  }
+
+  .banner-green-shape {
+    width: 330px;
+    height: 230px;
+  }
+
+  .shape-text {
+    font-size: 18px;
+
+    right: 25px;
+    bottom: 50px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .home-banner {
+    height: 560px;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(255,255,255,0.96),
+        rgba(255,255,255,0.78)
+      ),
+      url("../Assets/banner5.avif");
+
+    background-position: center;
+  }
+
+
+  .home-banner-container {
+    padding: 65px 20px;
+  }
+
+
+  .home-banner-content {
+    max-width: 420px;
+  }
+
+
+  .home-banner-content h1 {
+    font-size: 41px;
+  }
+
+
+  .home-banner-content h2 {
+    font-size: 22px;
+  }
+
+
+  .home-banner-content p {
+    font-size: 13px;
+  }
+
+
+  .desktop-break {
+    display: none;
+  }
+
+
+  /* smaller green shape */
+
+  .banner-green-shape {
+    width: 250px;
+    height: 160px;
+  }
+
+
+  .shape-text {
+    right: 18px;
+    bottom: 28px;
+
+    font-size: 14px;
+  }
+
+
+  /* smaller white shape */
+
+  .banner-white-shape {
+    width: 85%;
+    height: 80px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-banner {
+    height: 530px;
+  }
+
+
+  .home-banner-container {
+    padding: 55px 18px;
+  }
+
+
+  .banner-label span {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+
+  .label-line {
+    width: 30px;
+  }
+
+
+  .home-banner-content h1 {
+    font-size: 35px;
+  }
+
+
+  .home-banner-content h2 {
+    font-size: 19px;
+  }
+
+
+  .home-banner-content p {
+    max-width: 330px;
+  }
+
+
+  .banner-service-btn {
+    padding: 12px 20px;
+
+    font-size: 12px;
+  }
+
+
+  .banner-green-shape {
+    width: 200px;
+    height: 125px;
+  }
+
+
+  .shape-text {
+    font-size: 11px;
+
+    right: 12px;
+    bottom: 20px;
+  }
+
+
+  .banner-white-shape {
+    width: 80%;
+    height: 60px;
+  }
+}

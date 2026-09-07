@@ -1,0 +1,422 @@
+/* =========================================
+   HOME ABOUT
+========================================= */
+
+.home-about {
+  width: 100%;
+  background: #ffffff;
+
+  padding: 95px 0 110px;
+
+  position: relative;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.home-about-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.home-about-content {
+  max-width: 550px;
+}
+
+
+/* SMALL TITLE */
+
+.about-small-title {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 13px;
+}
+
+.about-small-title span {
+  color: #0875b7;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.about-title-line {
+  width: 45px;
+  height: 1px;
+
+  background: #79b6d4;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.home-about-content h2 {
+  margin: 0 0 20px;
+
+  color: #073a67;
+
+  font-size: 43px;
+  font-weight: 800;
+
+  line-height: 1.04;
+
+  letter-spacing: -1px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.home-about-content > p {
+  margin: 0;
+
+  max-width: 530px;
+
+  color: #5d6f7e;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.about-more-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-top: 27px;
+
+  padding: 14px 24px;
+
+  background: linear-gradient(
+    90deg,
+    #0875bb 0%,
+    #08b991 100%
+  );
+
+  border-radius: 4px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+
+  box-shadow: 0 8px 20px rgba(7, 117, 187, 0.12);
+}
+
+.about-more-btn span {
+  font-size: 17px;
+
+  transition: 0.3s ease;
+}
+
+.about-more-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(7, 117, 187, 0.2);
+}
+
+.about-more-btn:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   RIGHT IMAGE AREA
+========================================= */
+
+.home-about-image-area {
+  width: 100%;
+
+  min-height: 380px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.about-image-box {
+  width: 82%;
+  height: 355px;
+
+  overflow: hidden;
+
+  border-radius: 4px;
+
+  position: relative;
+}
+
+.about-image-box img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.5s ease;
+}
+
+.about-image-box:hover img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   FEATURE CARD
+========================================= */
+
+.about-feature-card {
+  width: 235px;
+
+  position: absolute;
+
+  right: 0;
+  bottom: 20px;
+
+  background: #eaf7fc;
+
+  padding: 24px 22px;
+
+  box-shadow: 0 12px 30px rgba(8, 61, 100, 0.08);
+}
+
+
+/* =========================================
+   FEATURE ITEMS
+========================================= */
+
+.about-feature-item {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 13px 0;
+
+  border-bottom: 1px solid rgba(7, 58, 103, 0.08);
+}
+
+.about-feature-item:first-child {
+  padding-top: 0;
+}
+
+.about-feature-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+
+/* ICON */
+
+.about-feature-icon {
+  width: 38px;
+  min-width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #0875b7;
+
+  font-size: 22px;
+}
+
+
+/* TEXT */
+
+.about-feature-item h4 {
+  margin: 0 0 2px;
+
+  color: #173d61;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.about-feature-item p {
+  margin: 0;
+
+  color: #5b7183;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+  .home-about-container {
+    gap: 50px;
+  }
+
+  .home-about-content h2 {
+    font-size: 37px;
+  }
+
+  .about-image-box {
+    width: 88%;
+    height: 330px;
+  }
+
+  .about-feature-card {
+    width: 215px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .home-about {
+    padding: 70px 0;
+  }
+
+  .home-about-container {
+    padding: 0 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .home-about-content {
+    max-width: 100%;
+  }
+
+  .home-about-content h2 {
+    font-size: 34px;
+  }
+
+  .home-about-content > p {
+    max-width: 100%;
+  }
+
+  .home-about-image-area {
+    min-height: auto;
+
+    display: block;
+  }
+
+  .about-image-box {
+    width: 100%;
+    height: 330px;
+  }
+
+  .about-feature-card {
+    width: calc(100% - 30px);
+
+    position: relative;
+
+    right: auto;
+    bottom: auto;
+
+    margin: -35px 15px 0;
+
+    z-index: 5;
+  }
+
+  .about-feature-item {
+    padding: 14px 0;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .home-about {
+    padding: 60px 0;
+  }
+
+  .home-about-container {
+    padding: 0 18px;
+  }
+
+  .about-small-title span {
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .about-title-line {
+    width: 30px;
+  }
+
+  .home-about-content h2 {
+    font-size: 30px;
+  }
+
+  .home-about-content > p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .about-more-btn {
+    padding: 12px 20px;
+
+    font-size: 12px;
+  }
+
+  .about-image-box {
+    height: 280px;
+  }
+
+  .about-feature-card {
+    padding: 20px;
+  }
+}

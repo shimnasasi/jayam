@@ -1,0 +1,374 @@
+/* =========================================
+   SERVICE LIST
+========================================= */
+
+.service-list {
+  padding: 75px 25px 90px;
+  background: #ffffff;
+}
+
+.service-list-heading {
+  max-width: 780px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.service-list-heading span {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #0782bd;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.service-list-heading h2 {
+  margin: 0 0 10px;
+
+  color: #06448a;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.service-list-heading p {
+  margin: 0;
+
+  color: #657789;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   FIRST 6 CARDS
+========================================= */
+
+.service-grid {
+  max-width: 1180px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.service-card {
+  background: #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+
+  box-shadow: 0 7px 25px rgba(0, 66, 120, 0.09);
+
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 15px 35px rgba(0, 66, 120, 0.15);
+}
+
+.service-card-image {
+  height: 205px;
+  overflow: hidden;
+}
+
+.service-card-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+
+.service-card:hover .service-card-image img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.service-card-content {
+  position: relative;
+
+  padding: 32px 28px 25px;
+}
+
+.service-card-icon {
+  position: absolute;
+
+  top: -30px;
+  left: 24px;
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  color: #07529f;
+
+  border-radius: 50%;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.service-card-content h3 {
+  margin: 5px 0 12px;
+
+  color: #164d87;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.service-card-content p {
+  min-height: 68px;
+
+  margin: 0 0 16px;
+
+  color: #647687;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.service-card-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #08a273;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.service-card-content a span {
+  transition: 0.3s ease;
+}
+
+.service-card-content a:hover span {
+  transform: translateX(5px);
+}
+
+
+/* =========================================
+   LAST ROW
+========================================= */
+
+.service-last-row {
+  max-width: 1180px;
+  margin: 28px auto 0;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  gap: 28px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   LIFT CARD
+========================================= */
+
+.lifts-card {
+  height: 100%;
+}
+
+
+/* =========================================
+   PARTNER BOX
+========================================= */
+
+.service-partner-box {
+  min-height: 100%;
+
+  padding: 50px 55px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: #f1f9fd;
+
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 6px;
+}
+
+
+/* Decorative leaf shape */
+
+.service-partner-box::after {
+  content: "";
+
+  position: absolute;
+
+  right: -60px;
+  bottom: -80px;
+
+  width: 240px;
+  height: 280px;
+
+  border-radius: 60% 0 60% 0;
+
+  background: rgba(37, 184, 166, 0.06);
+
+  transform: rotate(-25deg);
+}
+
+
+/* Label */
+
+.service-partner-label {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+}
+
+.service-partner-label > span {
+  width: 3px;
+  height: 52px;
+
+  background: #09a995;
+}
+
+.service-partner-label p {
+  margin: 0;
+
+  color: #138aa3;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  line-height: 1.8;
+}
+
+
+/* Heading */
+
+.service-partner-box h2 {
+  position: relative;
+  z-index: 2;
+
+  margin: 0 0 17px;
+
+  color: #07468b;
+
+  font-size: 42px;
+  line-height: 1.05;
+
+  font-weight: 800;
+}
+
+
+/* Description */
+
+.service-partner-description {
+  position: relative;
+  z-index: 2;
+
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #627587;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-last-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-partner-box {
+    padding: 40px 35px;
+  }
+
+  .service-partner-box h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .service-list {
+    padding: 55px 18px;
+  }
+
+  .service-list-heading {
+    margin-bottom: 35px;
+  }
+
+  .service-list-heading h2 {
+    font-size: 29px;
+  }
+
+  .service-list-heading p {
+    font-size: 14px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card-content p {
+    min-height: auto;
+  }
+
+  .service-last-row {
+    grid-template-columns: 1fr;
+  }
+
+  .service-partner-box {
+    min-height: 300px;
+
+    padding: 40px 28px;
+  }
+
+  .service-partner-box h2 {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,202 @@
+/* =====================================
+   SERVICE BANNER
+===================================== */
+
+.service-banner {
+  width: 100%;
+  min-height: 390px;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("../Assets/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Overlay */
+
+.service-banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 55, 108, 0.92) 0%,
+    rgba(3, 78, 139, 0.82) 40%,
+    rgba(0, 117, 149, 0.45) 72%,
+    rgba(0, 160, 126, 0.18) 100%
+  );
+}
+
+
+/* Container */
+
+.service-banner-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 70px 30px;
+
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Content */
+
+.service-banner-content {
+  max-width: 620px;
+
+  color: #ffffff;
+}
+
+
+/* Small title */
+
+.service-banner-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  color: #66e5c4;
+}
+
+
+/* Main heading */
+
+.service-banner-content h1 {
+  margin: 0 0 16px;
+
+  font-size: 52px;
+  line-height: 1.1;
+
+  font-weight: 800;
+
+  color: #ffffff;
+}
+
+
+/* Description */
+
+.service-banner-content p {
+  max-width: 550px;
+
+  margin: 0 0 22px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =====================================
+   BREADCRUMB
+===================================== */
+
+.service-breadcrumb {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  font-size: 14px;
+
+  color: #ffffff;
+}
+
+.service-breadcrumb a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.service-breadcrumb a:hover {
+  color: #66e5c4;
+}
+
+.service-breadcrumb > span:last-child {
+  color: #6ee3c1;
+  font-weight: 600;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+  .service-banner {
+    min-height: 350px;
+  }
+
+  .service-banner-container {
+    padding: 60px 25px;
+  }
+
+  .service-banner-content h1 {
+    font-size: 44px;
+  }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .service-banner {
+    min-height: 320px;
+
+    background-position: center;
+  }
+
+  .service-banner-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 55, 108, 0.94),
+      rgba(3, 91, 142, 0.8)
+    );
+  }
+
+  .service-banner-container {
+    padding: 55px 20px;
+  }
+
+  .service-banner-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  .service-banner-content h1 {
+    font-size: 38px;
+  }
+
+  .service-banner-content p {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .service-breadcrumb {
+    font-size: 13px;
+  }
+}

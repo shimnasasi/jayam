@@ -1,0 +1,415 @@
+/* =========================================
+   MAIN CONTACT SECTION
+========================================= */
+
+.contact-main {
+  width: 100%;
+  padding: 35px 0 75px;
+
+  background: #eef9fd;
+}
+
+.contact-main-container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  padding: 0 30px;
+
+  display: grid;
+
+  grid-template-columns: 0.95fr 1.05fr;
+
+  gap: 20px;
+
+  align-items: stretch;
+}
+
+
+/* =========================================
+   LEFT FORM CARD
+========================================= */
+
+.contact-form-box {
+  width: 100%;
+
+  padding: 32px;
+
+  background: #ffffff;
+
+  border-radius: 5px;
+
+  box-shadow:
+    0 6px 25px
+    rgba(7, 58, 103, 0.05);
+}
+
+.contact-form-label {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 11px;
+}
+
+.contact-form-label span {
+  color: #0875b7;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.contact-form-label div {
+  width: 42px;
+  height: 1px;
+
+  background: #86bcd4;
+}
+
+.contact-form-heading h2 {
+  margin: 0 0 10px;
+
+  color: #073a67;
+
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.contact-form-heading p {
+  margin: 0 0 28px;
+
+  color: #657786;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.contact-form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.contact-form-box input,
+.contact-form-box select,
+.contact-form-box textarea {
+  width: 100%;
+
+  border: 1px solid #dce7ee;
+
+  border-radius: 4px;
+
+  background: #ffffff;
+
+  color: #405b70;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.contact-form-box input,
+.contact-form-box select {
+  height: 50px;
+
+  padding: 0 15px;
+}
+
+.contact-form-box textarea {
+  min-height: 145px;
+
+  margin-top: 15px;
+
+  padding: 15px;
+
+  resize: none;
+}
+
+.contact-form-box input:focus,
+.contact-form-box select:focus,
+.contact-form-box textarea:focus {
+  border-color: #0875b7;
+
+  box-shadow:
+    0 0 0 2px
+    rgba(8, 117, 183, 0.06);
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.contact-form-box button {
+  width: 100%;
+  height: 55px;
+
+  margin-top: 15px;
+
+  border: none;
+
+  border-radius: 4px;
+
+  background: linear-gradient(
+    90deg,
+    #0875bb 0%,
+    #08b991 100%
+  );
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.contact-form-box button span {
+  font-size: 18px;
+}
+
+.contact-form-box button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 9px 22px
+    rgba(8, 117, 183, 0.18);
+}
+
+
+/* =========================================
+   RIGHT SIDE
+========================================= */
+
+.contact-right-side {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+
+/* =========================================
+   MAP
+========================================= */
+
+.contact-map {
+  width: 100%;
+  height: 255px;
+
+  overflow: hidden;
+
+  border-radius: 5px;
+
+  background: #dfeef5;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  border: none;
+}
+
+
+/* =========================================
+   OFFICE CARD
+========================================= */
+
+.office-card {
+  width: 100%;
+  min-height: 145px;
+
+  display: grid;
+
+  grid-template-columns: 1.35fr 0.85fr;
+
+  background: #ffffff;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 20px
+    rgba(7, 58, 103, 0.04);
+}
+
+.office-card-content {
+  padding: 24px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+}
+
+.contact-round-icon {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0875b7;
+
+  color: #ffffff;
+
+  font-size: 17px;
+}
+
+.office-card-content h3,
+.contact-small-card h3 {
+  margin: 2px 0 9px;
+
+  color: #073a67;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.office-card-content p,
+.contact-small-card p {
+  margin: 3px 0;
+
+  color: #667987;
+
+  font-size: 11px;
+
+  line-height: 1.55;
+}
+
+.office-name {
+  color: #34566e !important;
+
+  font-weight: 600;
+}
+
+.office-image {
+  width: 100%;
+  min-height: 145px;
+}
+
+.office-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================================
+   BOTTOM CARDS
+========================================= */
+
+.contact-small-cards {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.contact-small-card {
+  min-height: 105px;
+
+  padding: 20px;
+
+  background: #ffffff;
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 13px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(7, 58, 103, 0.04);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .contact-main-container {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contact-main {
+    padding: 30px 0 60px;
+  }
+
+  .contact-main-container {
+    padding: 0 20px;
+  }
+
+  .contact-form-box {
+    padding: 25px 20px;
+  }
+
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-heading h2 {
+    font-size: 29px;
+  }
+
+  .office-card {
+    grid-template-columns: 1fr;
+  }
+
+  .office-image {
+    height: 180px;
+  }
+
+  .contact-small-cards {
+    grid-template-columns: 1fr;
+  }
+}

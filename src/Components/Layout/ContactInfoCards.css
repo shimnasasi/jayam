@@ -1,0 +1,110 @@
+.contact-info-section {
+  background: #eef9fd;
+
+  padding: 15px 0 30px;
+}
+
+.contact-info-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 30px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.contact-info-card {
+  min-height: 130px;
+
+  padding: 24px 20px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 15px;
+
+  text-decoration: none;
+
+  box-shadow: 0 4px 15px rgba(7,58,103,0.04);
+}
+
+.contact-info-icon {
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #0875b7;
+
+  color: white;
+
+  font-size: 18px;
+}
+
+.contact-info-card h3 {
+  margin: 2px 0 6px;
+
+  color: #073a67;
+
+  font-size: 15px;
+}
+
+.contact-info-card strong {
+  display: block;
+
+  color: #174364;
+
+  font-size: 13px;
+}
+
+.contact-info-card p {
+  margin: 6px 0 0;
+
+  color: #71818e;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.quote-info-card {
+  position: relative;
+
+  color: inherit;
+}
+
+.quote-arrow {
+  margin-left: auto;
+
+  align-self: flex-end;
+
+  color: #0875b7;
+
+  font-size: 22px;
+}
+
+@media (max-width: 900px) {
+  .contact-info-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-info-container {
+    grid-template-columns: 1fr;
+
+    padding: 0 20px;
+  }
+}
