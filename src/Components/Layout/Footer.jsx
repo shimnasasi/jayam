@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import logo from "../Assets/logo.JPG";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         {/* Company */}
         <div className="footer-company">
           <img
-            src="/images/jayam-logo.png"
+            src={logo}
             alt="Jayam Technical Services"
             className="footer-logo"
           />
@@ -54,9 +55,9 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Contact Info</h3>
 
-          <span>☎ +91 98765 43210</span>
-          <span>✉ info@jayamtech.com</span>
-          <span>● Bangalore, India</span>
+          <span>☎ +971 54 358 2569</span>
+          <span>✉  info@jayam.me</span>
+          <span>● Dubai, UAE</span>
           <span>◷ Mon - Sat: 9:00 AM - 6:00 PM</span>
         </div>
 

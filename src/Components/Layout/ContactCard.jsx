@@ -45,7 +45,7 @@ const ContactCard = () => {
             </div>
 
             <div>
-              <h4>+91 98765 43210</h4>
+              <h4> +971543582569</h4>
               <p>Call us today</p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const ContactCard = () => {
             </div>
 
             <div>
-              <h4>info@jayamtech.com</h4>
+              <h4> info@jayam.me</h4>
               <p>Drop us an email</p>
             </div>
           </div>
@@ -69,7 +69,7 @@ const ContactCard = () => {
             </div>
 
             <div>
-              <h4>Bangalore, India</h4>
+              <h4>Dubai UAE</h4>
               <p>Our location</p>
             </div>
           </div>

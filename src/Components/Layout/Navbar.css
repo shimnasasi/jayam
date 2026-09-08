@@ -12,7 +12,7 @@
 
 .navbar-container {
   max-width: 1200px;
-  height: 90px;
+  height: 82px;
   margin: 0 auto;
   padding: 0 30px;
 
@@ -33,7 +33,7 @@
 }
 
 .navbar-logo img {
-  width: 175px;
+  width: 135px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -59,7 +59,7 @@
 
   text-decoration: none;
 
-  padding: 34px 0;
+  padding: 30px 0;
 
   transition: 0.3s ease;
 }
@@ -78,12 +78,16 @@
   position: absolute;
 
   left: 50%;
-  bottom: 23px;
+  bottom: 19px;
 
   width: 0;
   height: 2px;
 
-  background: #0866c6;
+  background: linear-gradient(
+    90deg,
+    #0875d1,
+    #08b77d
+  );
 
   transform: translateX(-50%);
 
@@ -102,7 +106,7 @@
 
 .quote-btn {
   min-width: 145px;
-  height: 48px;
+  height: 46px;
 
   padding: 0 22px;
 
@@ -113,8 +117,9 @@
 
   background: linear-gradient(
     135deg,
-    #0875d1,
-    #075aa8
+    #0875d1 0%,
+    #078db8 50%,
+    #08b77d 100%
   );
 
   color: #ffffff;
@@ -126,20 +131,32 @@
 
   border-radius: 5px;
 
-  box-shadow: 0 6px 18px rgba(8, 102, 198, 0.2);
+  box-shadow: 0 6px 18px rgba(8, 102, 198, 0.18);
 
-  transition: 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
 }
 
 .quote-btn span {
   font-size: 20px;
-  transition: 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .quote-btn:hover {
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    #0665b8 0%,
+    #078aa7 50%,
+    #079d6c 100%
+  );
+
   transform: translateY(-2px);
 
-  box-shadow: 0 9px 24px rgba(8, 102, 198, 0.28);
+  box-shadow: 0 9px 24px rgba(8, 130, 170, 0.25);
 }
 
 .quote-btn:hover span {
@@ -175,7 +192,11 @@
   width: 25px;
   height: 2.5px;
 
-  background: #0866c6;
+  background: linear-gradient(
+    90deg,
+    #0875d1,
+    #08b77d
+  );
 
   border-radius: 10px;
 
@@ -214,12 +235,12 @@
 @media (max-width: 900px) {
 
   .navbar-container {
-    height: 80px;
+    height: 76px;
     padding: 0 22px;
   }
 
   .navbar-logo img {
-    width: 150px;
+    width: 120px;
   }
 
   .navbar-links {
@@ -228,11 +249,12 @@
 
   .navbar-links a {
     font-size: 14px;
+    padding: 27px 0;
   }
 
   .quote-btn {
     min-width: 125px;
-    height: 44px;
+    height: 42px;
     padding: 0 15px;
   }
 }
@@ -249,14 +271,14 @@
   }
 
   .navbar-container {
-    height: 72px;
+    height: 70px;
     padding: 0 18px;
   }
 
   /* Logo */
 
   .navbar-logo img {
-    width: 135px;
+    width: 105px;
   }
 
   /* Hide desktop nav */
@@ -283,7 +305,7 @@
   .mobile-menu {
     position: absolute;
 
-    top: 72px;
+    top: 70px;
     left: 0;
 
     width: 100%;
@@ -357,8 +379,9 @@
 
     background: linear-gradient(
       135deg,
-      #0875d1,
-      #075aa8
+      #0875d1 0%,
+      #078db8 50%,
+      #08b77d 100%
     );
 
     color: #ffffff;
@@ -369,6 +392,8 @@
     text-decoration: none;
 
     border-radius: 5px;
+
+    box-shadow: 0 6px 18px rgba(8, 102, 198, 0.16);
   }
 
   .mobile-quote-btn span {
@@ -388,7 +413,7 @@
   }
 
   .navbar-logo img {
-    width: 120px;
+    width: 95px;
   }
 
   .mobile-menu {
