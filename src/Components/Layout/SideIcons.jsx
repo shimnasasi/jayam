@@ -35,7 +35,7 @@ const SideIcons = () => {
     <div className="icon-container">
       <div className="iconwrapper">
         <a
-          href="https://wa.me/+918792220030/?text=let me know more about the services provided by *MechFusion*"
+          href="https://wa.me/971543582569/?text=let me know more about the services provided by *Jayam*"
           target="_blank"
           rel="noreferrer"
           title="Whatsapp"
@@ -45,7 +45,7 @@ const SideIcons = () => {
       </div>
       <div className="iconwrapper">
         <a 
-          href="mailto:enquiry@mechfusion.in"
+          href="mailto:info@jayam.me"
           target="_blank"
           title="Email"
           rel="noreferrer"
@@ -55,7 +55,7 @@ const SideIcons = () => {
       </div>
       <div className="iconwrapper">
         <a
-          href="tel:+918792220030"
+          href="tel:+971543582569"
           target="_blank"
           title="Call"
           rel="noreferrer"

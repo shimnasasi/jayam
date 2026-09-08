@@ -18,7 +18,7 @@ const ContactInfoCards = () => {
           <div>
             <h3>Call Us</h3>
 
-            <strong>+91 98765 43210</strong>
+            <strong>+971543582569</strong>
 
             <p>Mon - Sat, 9:00 AM - 6:00 PM</p>
           </div>
@@ -35,7 +35,7 @@ const ContactInfoCards = () => {
           <div>
             <h3>Email Us</h3>
 
-            <strong>info@jayamtech.com</strong>
+            <strong>info@jayam.me</strong>
 
             <p>We reply within 24 hours</p>
           </div>
@@ -52,7 +52,7 @@ const ContactInfoCards = () => {
           <div>
             <h3>Visit Us</h3>
 
-            <strong>Bangalore, India</strong>
+            <strong>Dubai, UAE</strong>
 
             <p>Our Office Location</p>
           </div>
